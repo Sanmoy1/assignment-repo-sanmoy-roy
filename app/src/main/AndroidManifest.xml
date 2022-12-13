@@ -36,6 +36,9 @@
             android:screenOrientation="portrait"
 
             android:exported="false" />
+        <activity android:name=".activities.CalenderActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
         <activity
             android:name=".activities.ChatActivity"
             android:screenOrientation="portrait"

@@ -35,7 +35,7 @@ class AllMembersActivity : AppCompatActivity() {
     lateinit var allMemberAdapter: allMembersAdapter
     lateinit var allMemberRV : RecyclerView
     private lateinit var memberList : ArrayList<Member>
-    private lateinit var headingText : TextView
+     lateinit var headingText : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -36,6 +36,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var roomsText : TextView
     private lateinit var memberText : TextView
     private lateinit var rentsText : TextView
+    private lateinit var calenderbutton: ImageView
     private var totalBeds = 0
     private var totalMembers = 0
     private var totalRentPaid = 0;
@@ -57,6 +58,7 @@ class HomeActivity : AppCompatActivity() {
         rentsText = findViewById(R.id.rentText)
 
         pgName = findViewById(R.id.pgname_textView)
+        calenderbutton=findViewById(R.id.CalenderButton)
 
         userObj = JSONObject(intent.getStringExtra("USER"))
         fetchData()
@@ -130,6 +132,12 @@ class HomeActivity : AppCompatActivity() {
 
             }
         })
+
+        CalenderButton.setOnClickListener()
+        {
+            val intent=Intent(this,CalenderActivity::class.java)
+            startActivity(intent)
+        }
 
 
         findViewById<CardView>(R.id.allMembersCard).setOnClickListener(object : View.OnClickListener{
